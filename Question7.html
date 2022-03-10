@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display:flex;
+            height:100vh;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+            font-size:13px;
+
+        }
+        .main_container{
+            background-color:rgb(255, 255, 255);
+            height:36vh;
+            width:28vw;
+            display:flex;
+            flex-direction:column;
+        }
+        .container1{
+            /* box-sizing: border-box;  */
+            display:flex;
+            justify-content:center;
+            background-color:red;
+            margin:8px 10px;
+            
+            
+        }
+        header{
+           
+            margin:10px 15px;
+            height:25px;
+            width:420px;
+            color:white;
+            font-weight:bold;
+            font-size:20px;
+            text-align:center;
+        }
+        .container2{
+           
+            flex:1;
+        }
+        input{
+            border:none;
+            background: transparent;
+            border-bottom: 2px solid #000000;
+            outline:none;
+        }
+        .container3{
+            display:flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .container4{
+            border: aquamarine;
+            display:flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+        }
+        span{
+            padding-left:20px;
+        }
+        p{
+            margin:1px;
+            padding-left:20px;
+        }
+        .container6{
+            box-sizing:border-box;
+            border:4px solid black;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        
+        <div class="container6">
+            <div class="container1">
+                <header>Yes!I want to subscribe to  <em>Mag-O-Zine</em></header>
+            </div>
+            <div class="container2">
+                <form action="">
+                    <div class="container4">
+                        <div class="container3">
+                            <input type="text" name="myFirstName"><label for="">First Name</label>
+                        </div>
+                        <div class="container3">
+                            <input type="text" name="myLastName"><label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <div class="container3">
+                            <input type="text" name="myAddress"><label for="">Address</label>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <div class="container3">
+                            <input type="text" name="myCity"><label for="">City</label>
+                        </div>
+                        <div class="container3">
+                            <input type="text" name="myState"><label for="">State</label>
+                        </div>
+                    </div>
+                
+                   <div class="container5">
+                    <span>Subscribe for:</span><input type="checkbox" id="1" checked>1 Year($19.95)
+                    <input type="checkbox" id="2">2 years($35.00)
+                   </div>
+                 
+                       <p>Send me more information about:</p>
+                     
+                        <input type="checkbox" name="myInfo" id="" checked style="margin-left:20px">Computer-Zine<br>
+                        <input type="checkbox" name="myInfo" id="" style="margin-left:20px">Fishing-Zine<br>
+                        <input type="checkbox" name="myInfo" id="" checked style="margin-left:20px">Cat-O-Zine
+                     
+                  
+                </form>
+    
+            </div>
+        </div>
+       
+
+    </div>
+    
+</body>
+</html>
